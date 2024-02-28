@@ -1,0 +1,100 @@
+/* F O N T S */
+@font-face {
+  font-family: "Kompot Styled";
+  src: url(/fonts/KompotStyled.otf) format("truetype"), url(/fonts/KompotStyled.woff2) format("woff2"), url(/fonts/KompotStyled.woff) format("woff"); }
+@font-face {
+  font-family: "Mogent";
+  src: url(/fonts/Mogent.otf) format("truetype"), url(/fonts/Mogent.woff2) format("woff2"), url(/fonts/Mogent.woff) format("woff"); }
+body {
+  background-color: #fff;
+  color: #404969;
+  font-family: Arial, Helvetica, sans-serif; }
+
+/* M A I N */
+main.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+
+/* A N I M A T I O N */
+.animation-wrapper {
+  position: relative;
+  margin: 100px 150px 0 100px; }
+
+.circle {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: turquoise;
+  animation: move-the-circle 1s infinite;
+  transform-origin: center center; }
+
+.circle:nth-child(1) {
+  bottom: 0px;
+  animation-delay: 0.1s; }
+
+.circle:nth-child(2) {
+  bottom: 30px;
+  animation-delay: 0.2s; }
+
+.circle:nth-child(3) {
+  bottom: 60px;
+  animation-delay: 0.3s; }
+
+.circle:nth-child(4) {
+  bottom: 90px;
+  animation-delay: 0.4s; }
+
+.circle:nth-child(5) {
+  bottom: 120px;
+  animation-delay: 0.5s; }
+
+.circle:nth-child(6) {
+  bottom: 150px;
+  animation-delay: 0.6s; }
+
+.circle:nth-child(7) {
+  bottom: 180px;
+  animation-delay: 0.7s; }
+
+.circle:nth-child(8) {
+  bottom: 210px;
+  animation-delay: 0.8s; }
+
+@keyframes move-the-circle {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+    background-color: turquoise; }
+  50% {
+    transform: translate(50px, 0) scale(0.4);
+    opacity: .5;
+    background-color: blue; }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+    background-color: turquoise; } }
+/* T I T L E */
+div.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  div.title-container h1 {
+    font-family: "Kompot Styled", serif;
+    font-size: 7rem; }
+  div.title-container h2 {
+    font-family: "Mogent", sans-serif;
+    font-size: 4rem; }
+  div.title-container p.coming-soon {
+    margin-top: 7rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    text-transform: uppercase; }
+
+/*# sourceMappingURL=styles.css.map */
